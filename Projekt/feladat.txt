@@ -1,0 +1,6 @@
+egy darab játékos a gép ellen fog játszani torpedót
+egy dimenziós egy darab hajó
+egy soros pálya
+kell:
+	-UML
+	-feladat szövegesen
