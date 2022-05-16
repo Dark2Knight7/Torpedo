@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Torpedo {
 
-    public static void palyaGeneralas() {
+    public static void jatekMenet() {
         String[] palya1 = {"X", "X", "X", "_", "_", "_", "_"};
         String[] palya2 = {"_", "_", "X", "X", "X", "_", "_"};
         String[] palya3 = {"_", "_", "_", "_", "X", "X", "X"};
@@ -16,23 +16,24 @@ public class Torpedo {
         int ranpalya = rnd.nextInt(5);
 
         if (ranpalya == 0) {
-            System.out.println(Arrays.toString(palya1));
+            System.out.println("A nullás pályán játszik.");
         } else if (ranpalya == 1) {
-            System.out.println(Arrays.toString(palya2));
+            System.out.println("A egyes pályán játszik.");
         } else if (ranpalya == 2) {
-            System.out.println(Arrays.toString(palya3));
+            System.out.println("A kettes pályán játszik.");
         } else if (ranpalya == 3) {
-            System.out.println(Arrays.toString(palya4));
+            System.out.println("A hármas pályán játszik.");
         } else if (ranpalya == 4) {
-            System.out.println(Arrays.toString(palya5));
+            System.out.println("A négyes pályán játszik.");
         }
-    }
-
-    public static void tamadas() {
+        
         Scanner tipp = new Scanner(System.in);
-        System.out.println("Kérem adja meg melyik mezőre szeretne támadni: ");
+        System.out.println("Kérem adja meg melyik mezőre szeretne támadni 5 támadási lehetősége van: ");
         int tamadasiMezo = tipp.nextInt();
-        System.out.println("A mező ahova támadott: " + tamadasiMezo);
+        
+        if (palya1[tamadasiMezo]=="X") {
+            System.out.println("Találat");
+        }
 
     }
 }

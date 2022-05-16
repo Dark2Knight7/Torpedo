@@ -1,12 +1,9 @@
-
 package torpedo;
 
-import static torpedo.Torpedo.palyaGeneralas;
-import static torpedo.Torpedo.tamadas;
+import static torpedo.Torpedo.jatekMenet;
 
 public class Jatek {
     public static void main(String[] args) {
-        palyaGeneralas();
-        tamadas();
+        jatekMenet();
     }
 }
