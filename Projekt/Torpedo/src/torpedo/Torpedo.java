@@ -33,6 +33,8 @@ public class Torpedo {
         
         if (palya1[tamadasiMezo]=="X") {
             System.out.println("Találat");
+        }else{
+            System.out.println("Nem Talált");
         }
 
     }
